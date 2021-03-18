@@ -1,0 +1,25 @@
+{
+  "name": "quiz-game-christopher-heo-and-venuka-samaraweera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/quiz-game-christopher-heo-and-venuka-samaraweera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/quiz-game-christopher-heo-and-venuka-samaraweera/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/quiz-game-christopher-heo-and-venuka-samaraweera#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {},
+  "description": ""
+}
