@@ -1,0 +1,2 @@
+document.querySelector("#progress"),document.querySelector("#question"),Array.from(document.querySelectorAll("#choice"));
+//# sourceMappingURL=index.HASH_REF_4ac83920e3d1b41a8be7270675b40076.js.map
