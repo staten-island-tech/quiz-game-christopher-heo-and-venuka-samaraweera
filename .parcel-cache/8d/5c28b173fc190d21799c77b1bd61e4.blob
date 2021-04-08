@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7909df7ce67b1f4b0e111579add6a290">
+    <title>Naruto Trivia</title>
+  </head>
+
+  <span id="progress" class="mt-5 text-3xl">x/5 completed</span>
+
+  <body class="bg-yellow-200 text-center mt-10">
+    <h1 class="text-8xl mb-3">Naruto Trivia</h1>
+
+    <h2 class="text-3xl mb-10">Do U know Naruto like Dat?</h2>
+
+    <h2 id="question" class="text-2xl mb-7">
+      Select the correct name of the character shown below
+    </h2>
+
+    <img id="image" class="m-auto w-1/3" src="b4248d3ab1d9e96ef7435e6057b68223" alt="coolest dude ever">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Kakashi</button>
+      <button id="choice" class="text-xl m-3">Naruto</button>
+      <button id="choice" class="text-xl m-3">Jiraiya</button>
+      <button id="choice" class="text-xl m-3">Sasuke</button>
+    </div>
+    <script src="1905321a5222ae493c9d6fa0f6d2dead"></script>
+  </body>
+</html>
