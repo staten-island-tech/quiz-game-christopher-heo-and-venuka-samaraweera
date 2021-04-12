@@ -1,0 +1,9 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+let score = 0;
+let progress = 0;
+choices.forEach(item => {
+  addEventListener("click", function () {
+    console.log("heasdf");
+  });
+});

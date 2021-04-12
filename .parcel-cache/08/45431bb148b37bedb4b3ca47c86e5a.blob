@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.HASH_REF_54ac89311abf790d557263d36893ea70.css">
+    <title>Naruto Trivia</title>
+  </head>
+
+  <span id="progress" class="mt-5 text-3xl">x/5 completed</span>
+
+  <body class="bg-yellow-200 text-center mt-10">
+    <h1 class="text-8xl mb-3">Naruto Trivia</h1>
+
+    <h2 class="text-3xl mb-10">Do U know Naruto like Dat?</h2>
+
+    <h2 id="question" class="text-2xl mb-7">
+      Select the correct name of the character shown below
+    </h2>
+
+    <img id="image" class="m-auto w-1/3" src="/kakashi.HASH_REF_d8e9753b05b97bc013a77afe1187c61c.jpeg" alt="coolest dude ever">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Kakashi</button>
+      <button id="choice" class="text-xl m-3">Jiraiya</button>
+      <button id="choice" class="text-xl m-3">Tsunade</button>
+      <button id="choice" class="text-xl m-3">Obito</button>
+    </div>
+
+    <img id="image" class="m-auto w-1/3" src="/itachi.HASH_REF_f9fabab3addb18e1e81ce7b671eb0f05.jpeg" alt="genjutsu">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Madara</button>
+      <button id="choice" class="text-xl m-3">Itachi</button>
+      <button id="choice" class="text-xl m-3">Kisame</button>
+      <button id="choice" class="text-xl m-3">Pain</button>
+    </div>
+
+    <img id="image" class="m-auto w-1/3" src="/minato.HASH_REF_e97c1b644e8250667c702059e0875972.png" alt="the yellow flash">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Jiraiya</button>
+      <button id="choice" class="text-xl m-3">Naruto</button>
+      <button id="choice" class="text-xl m-3">Hiruzen</button>
+      <button id="choice" class="text-xl m-3">Minato</button>
+    </div>
+
+    <img id="image" class="m-auto w-1/3" src="/naruto.HASH_REF_57756b30b0ea903c4bcfb178dc05dfb7.jpeg" alt="Kurama">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Naruto</button>
+      <button id="choice" class="text-xl m-3">Obito</button>
+      <button id="choice" class="text-xl m-3">Nagato</button>
+      <button id="choice" class="text-xl m-3">Deidara</button>
+    </div>
+
+    <img id="image" class="m-auto w-1/3" src="/sasuke.HASH_REF_3dae2a2a3168bdf1fe54b41cc906bc60.png" alt="sasuke">
+
+    <div id="choice container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3">Gaara</button>
+      <button id="choice" class="text-xl m-3">Shisui</button>
+      <button id="choice" class="text-xl m-3">Sasuke</button>
+      <button id="choice" class="text-xl m-3">Tobirama</button>
+    </div>
+
+    <button id="submit-btn" class="submit-btn btn">Submit</button>
+
+    <script src="/index.HASH_REF_0fa2489aa94c8731ee2aee9f3fafb3e2.js"></script>
+  </body>
+</html>

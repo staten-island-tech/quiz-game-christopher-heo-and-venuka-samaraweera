@@ -1,0 +1,3 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+choices.addEventListener("click", console.log("sdfsdfasdfd"));

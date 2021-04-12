@@ -1,0 +1,18 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+let score = 0;
+let progress = 0;
+// choices.forEach((item) => {
+// let i = 1;
+// item.setAttribute("data-value", i);
+// addEventListener("click", function () {
+// console.log(item.dataset.value);
+// });
+// i++;
+// });
+const choiceContainer = Array.from(document.querySelectorAll("[id=choice-container]"));
+console.log(choiceContainer[0].children);
+console.log(choiceContainer[1].children.length);
+for (let i = 1; i <= 4; i++) {}
+console.log(choices.length);
+function acceptAnswer() {}

@@ -1,0 +1,2 @@
+require("./questions");
+const choices = Array.from(document.querySelectorAll("choice-container"));

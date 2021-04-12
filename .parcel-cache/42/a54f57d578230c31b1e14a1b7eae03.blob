@@ -1,0 +1,13 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+let score = 0;
+let progress = 0;
+choices.forEach(item => {
+  let i = 1;
+  i++;
+  item.setAttribute("data-value", i);
+  addEventListener("click", function () {
+    console.log(item.dataset.value);
+  });
+});
+function acceptAnswer() {}

@@ -1,0 +1,11 @@
+var _questions = require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+let score = 0;
+let progress = 0;
+choices.forEach(item => {
+  addEventListener("click", function () {
+    console.log(item.dataset);
+  });
+});
+function acceptAnswer() {}
+console.log(_questions.questions[1].answer);
