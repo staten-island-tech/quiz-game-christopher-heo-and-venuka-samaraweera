@@ -35,3 +35,12 @@ for (let i = 0; i < choiceContainer[0].children.length; i++) {
     console.log(userAnswers);
   });
 }
+
+for (let i = 0; i < choiceContainer.length; i++) {
+  for (let j = 0; j < choiceContainer[0].length; j++) {
+    addEventListener("click", function () {
+      userAnswers.push(choiceContainer[i].children[j].innerHTML);
+      console.log(userAnswers);
+    });
+  }
+}
