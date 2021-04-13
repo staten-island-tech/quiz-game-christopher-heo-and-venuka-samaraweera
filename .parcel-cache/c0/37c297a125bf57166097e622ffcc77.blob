@@ -1,0 +1,69 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+const everything = document.getElementsByTagName("HTML");
+let score = 0;
+let progress = 0;
+const choiceContainer = document.querySelectorAll("[id=choice-container]");
+console.log(choiceContainer[0].children[0]);
+console.log(choiceContainer[1].children.length);
+choiceContainer[1].children[1].setAttribute("data-value", 1);
+console.log(choiceContainer[1].children[1].dataset.value);
+// choices.forEach(myFunction);
+// function myFunction() {
+// addEventListener("click", function () {
+// userAnswers.push(choice.innerHTML);
+// console.log(userAnswers);
+// });
+// }
+// for (let i = 0; i < choiceContainer[0].children.length; i++) {
+// let value = i + 1;
+// console.log(value);
+// choiceContainer[0].children[i].setAttribute("data-value", value);
+// addEventListener("click", function () {
+// let dataValue = choiceContainer[0].children[i].dataset.value;
+// console.log(dataValue);
+// });
+// }
+// every time a button is clicked, store the string of the input in an array
+// compare the string to the actual answer at the end
+// console.log(choice[1].innerHTML);
+// let i = 0;
+// for (choice[i] in choiceContainer) {
+// addEventListener("click", function () {
+// userAnswers.push(choice[i].innerHTML);
+// console.log(userAnswers);
+// });
+// i++;
+// }
+// let i = 0;
+// while (i < 1) {
+// if (this.tagName == "button") {
+// addEventListener("click", function () {
+// userAnswers.push(choice[i].innerHTML);
+// console.log(userAnswers);
+// });
+// } else {
+// continue;
+// }
+// i++;
+// }
+let userAnswers = [];
+// for (let i = 0; i < choiceContainer.length; i++) {
+// for (let j = 0; j < choiceContainer[0].length; j++) {
+// addEventListener("click", function () {
+// userAnswers.push(choiceContainer[i].children[j].innerHTML);
+// console.log(userAnswers);
+// });
+// }
+// }
+console.log(choiceContainer[0].children);
+// for (let i = 0; i < choices.length; i++) {
+// addEventListener("click", function () {
+// userAnswers.push(choices[i].innerHTML);
+// console.log(userAnswers);
+// });
+// }
+addEventListener("click", function () {
+  userAnswers.push(choices[i].innerHTML);
+  console.log(userAnswers);
+});

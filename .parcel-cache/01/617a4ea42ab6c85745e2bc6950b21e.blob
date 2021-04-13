@@ -1,0 +1,55 @@
+//answer key
+let answers = ["Kakashi", "Itachi", "Minato", "Naruto", "Sasuke"];
+
+const MAXQUESTIONS = 5;
+const finalScore = document.getElementById("score"); //score
+const images = document.querySelectorAll("[id=image]"); //array of all the images
+const submitBtn = document.getElementById("submit-btn");
+const choices = document.querySelectorAll("[id=choice]"); //array of every single choice
+let score = 0;
+
+//nested array of all the choice containers that each contain the 4 choices
+const choiceContainer = document.querySelectorAll("[id=choice-container]");
+
+let userAnswers = []; //empty list for user answer inputs
+
+// loop to attribute event listener (when pressed, push the displayed HTML to userAnswers array) to every choice
+for (let i = 0; i < choices.length; i++) {
+  let x = 0;
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choices[i].innerHTML);
+    console.log(userAnswers);
+    for (let j = 0; j < choiceContainer.length; j++) {
+      if (choiceContainer[j] === choices[i].parentElement) {
+        choiceContainer[j].classList.add("hidden");
+        images[j].classList.add("hidden");
+      }
+
+      if (userAnswers.length === MAXQUESTIONS) {
+        choiceContainer[MAXQUESTIONS - 1].classList.add("hidden");
+        images[MAXQUESTIONS - 1].classList.add("hidden");
+        getScore();
+        submitBtn.classList.remove("hidden");
+        break;
+      }
+    }
+  });
+}
+
+//compare for equality
+function getScore() {
+  for (let i = 0; i < answers.length; i++) {
+    for (let j = 0; j < userAnswers.length; j++) {
+      if (answers[i] === userAnswers[j]) {
+        score++;
+      }
+    }
+  }
+  console.log(score);
+}
+
+submitBtn.addEventListener("click", function () {
+  submitBtn.classList.add("hidden");
+  finalScore.classList.remove("hidden");
+  finalScore.innerHTML = `Score: ${score}`;
+});

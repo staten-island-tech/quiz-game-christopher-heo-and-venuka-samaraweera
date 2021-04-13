@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="0a11a83812c727037fb35b8440e6dc47">
+    <title>Naruto Trivia</title>
+  </head>
+
+  <span id="progress" class="mt-5 text-3xl">x/5 completed</span>
+
+  <body class="bg-yellow-200 text-center mt-10">
+    <h1 class="text-8xl mb-3">Naruto Trivia</h1>
+
+    <h2 class="text-3xl mb-10">Do U know Naruto like Dat?</h2>
+
+    <h2 id="question" class="text-2xl mb-7">
+      Select the correct name of the character shown below
+    </h2>
+
+    <img id="image" class="border-8 border-purple-700 rounded-3xl m-auto w-1/3" src="e1d15fd8a9a760f8d6442b754eabeaca" alt="coolest dude ever">
+
+    <div id="choice-container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-3xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Kakashi
+      </button>
+      <button id="choice" class="text-3xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Jiraiya
+      </button>
+      <button id="choice" class="text-3xl m-3 p-1 bg-blue-400 rounded-xl">
+        Tsunade
+      </button>
+      <button id="choice" class="text-3xl m-3 p-1 bg-blue-400 rounded-xl">
+        Obito
+      </button>
+    </div>
+
+    <img id="image" class="shadow-2xl border-8 border-purple-700 rounded-3xl m-auto w-1/3" src="b528432df4fd353c4bbd2461a5ee4568" alt="genjutsu">
+
+    <div id="choice-container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Madara
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Itachi
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Kisame
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Pain
+      </button>
+    </div>
+
+    <img id="image" class="border-8 border-purple-700 rounded-3xl m-auto w-1/3" src="2e0d94bf5d72627514585656ffe86961" alt="the yellow flash">
+
+    <div id="choice-container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Yamato
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Sakura
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Hiruzen
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Minato
+      </button>
+    </div>
+
+    <img id="image" class="border-8 border-purple-700 rounded-3xl m-auto w-1/3" src="425759d439d2da161f6fd6b7f9d4a1a1" alt="Kurama">
+
+    <div id="choice-container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Naruto
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Konan
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Nagato
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Deidara
+      </button>
+    </div>
+
+    <img id="image" class="border-8 border-purple-700 rounded-3xl m-auto w-1/3" src="6939b8552ad01e1f1057d0901f8682be" alt="sasuke">
+
+    <div id="choice-container" class="answers w-3/4 h-16 justify-center m-auto">
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Gaara
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Shisui
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Sasuke
+      </button>
+      <button id="choice" class="text-xl m-3 text-3xl p-1 bg-blue-400 rounded-xl">
+        Tobirama
+      </button>
+    </div>
+
+    <button id="submit-btn" class="submit-btn btn text-3xl mb-6 hidden">
+      Submit
+    </button>
+
+    <h1 id="score" class="text-7xl">Score:</h1>
+
+    <script src="d26b03374973c7a2a151878b2e21a00f"></script>
+  </body>
+</html>

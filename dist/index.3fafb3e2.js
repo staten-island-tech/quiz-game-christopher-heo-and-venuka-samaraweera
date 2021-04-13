@@ -442,120 +442,73 @@ id) /*: string*/
 }
 
 },{}],"5rkFb":[function(require,module,exports) {
-require("./questions");
-const choices = document.querySelectorAll("[id=choice]");
+//answer key
+let answers = ["Kakashi", "Itachi", "Minato", "Naruto", "Sasuke"];
+
+const MAXQUESTIONS = 5;
+const finalScore = document.getElementById("score"); //HTML score (what's being displayed)
+const images = document.querySelectorAll("[id=image]"); //array of all the images
+const submitBtn = document.getElementById("submit-btn");
+const choices = document.querySelectorAll("[id=choice]"); //array of every single choice
 let score = 0;
-let progress = 0;
+
+//nested array of all the choice containers that each contain the 4 choices
 const choiceContainer = document.querySelectorAll("[id=choice-container]");
-console.log(choiceContainer[0].children[0]);
-console.log(choiceContainer[1].children.length);
-choiceContainer[1].children[1].setAttribute("data-value", 1);
-console.log(choiceContainer[1].children[1].dataset.value);
-// for (let i = 0; i < choiceContainer[0].children.length; i++) {
-// let value = i + 1;
-// console.log(value);
-// choiceContainer[0].children[i].setAttribute("data-value", value);
-// addEventListener("click", function () {
-// let dataValue = choiceContainer[0].children[i].dataset.value;
-// console.log(dataValue);
-// });
-// }
-// every time a button is clicked, store the string of the input in an array
-// compare the string to the actual answer at the end
-const userAnswers = [];
-console.log(choice[1].innerHTML);
-for (let i = 0; i < choiceContainer[0].children.length; i++) {
-  addEventListener("click", function () {
-    userAnswers.push(choice[i].innerHTML);
-    console.log(userAnswers);
+
+let userAnswers = []; //empty list for user answer inputs
+
+// loop to attribute event listener (when pressed, push the displayed HTML to userAnswers array) to every choice
+for (let i = 0; i < choices.length; i++) {
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choices[i].innerHTML); //append the displayed text of the choice to the userAnswers array
+    for (let j = 0; j < choiceContainer.length; j++) {
+      //whenever a choice is selected, its parent container and image gets deleted
+      if (choiceContainer[j] === choices[i].parentElement) {
+        choiceContainer[j].classList.add("hidden");
+        images[j].classList.add("hidden");
+      }
+
+      //once all the questions are answered, hide the last image and container, calculate score, reveal submit button, and end the game
+      if (userAnswers.length === MAXQUESTIONS) {
+        choiceContainer[MAXQUESTIONS - 1].classList.add("hidden");
+        images[MAXQUESTIONS - 1].classList.add("hidden");
+        getScore();
+        submitBtn.classList.remove("hidden");
+        break;
+      }
+    }
   });
 }
 
-},{"./questions":"2MyJI"}],"2MyJI":[function(require,module,exports) {
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-_parcelHelpers.defineInteropFlag(exports);
-_parcelHelpers.export(exports, "questions", function () {
-  return questions;
-});
-let questions = [{
-  image: "./img/kakashi.jpeg",
-  choice1: "Kakashi",
-  choice2: "Jiraiya",
-  choice3: "Tsunade",
-  choice4: "Obito",
-  answer: 1
-}, {
-  image: "./img/itachi.jpeg",
-  choice1: "Madara",
-  choice2: "Itachi",
-  choice3: "Kisame",
-  choice4: "Pain",
-  answer: 2
-}, {
-  image: "./img/minato.png",
-  choice1: "Jiraiya",
-  choice2: "Naruto",
-  choice3: "Hiruzen",
-  choice4: "Minato",
-  answer: 4
-}, {
-  image: "./img/naruto.jpeg",
-  choice1: "Naruto",
-  choice2: "Obito",
-  choice3: "Nagato",
-  choice4: "Deidara",
-  answer: 1
-}, {
-  image: "./img/sasuke.png",
-  choice1: "Gaara",
-  choice2: "Shisui",
-  choice3: "Sasuke",
-  choice4: "Tobirama",
-  answer: 3
-}];
-
-},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5gA8y":[function(require,module,exports) {
-"use strict";
-
-exports.interopDefault = function (a) {
-  return a && a.__esModule ? a : {
-    default: a
-  };
-};
-
-exports.defineInteropFlag = function (a) {
-  Object.defineProperty(a, '__esModule', {
-    value: true
-  });
-};
-
-exports.exportAll = function (source, dest) {
-  Object.keys(source).forEach(function (key) {
-    if (key === 'default' || key === '__esModule') {
-      return;
-    } // Skip duplicate re-exports when they have the same value.
-
-
-    if (key in dest && dest[key] === source[key]) {
-      return;
-    }
-
-    Object.defineProperty(dest, key, {
-      enumerable: true,
-      get: function () {
-        return source[key];
-      }
+<<<<<<< Updated upstream
+for (let i = 0; i < choiceContainer.length; i++) {
+  for (let j = 0; j < choiceContainer[0].length; j++) {
+    addEventListener("click", function () {
+      userAnswers.push(choiceContainer[i].children[j].innerHTML);
+      console.log(userAnswers);
     });
-  });
-  return dest;
-};
+  }
+}
+=======
+//compare for equality
+function getScore() {
+  for (let i = 0; i < answers.length; i++) {
+    for (let j = 0; j < userAnswers.length; j++) {
+      //iterate through all values of userAnswers array to compare to the answers array, increment score if equal
+      if (answers[i] === userAnswers[j]) {
+        score++;
+      }
+    }
+  }
+}
 
-exports.export = function (dest, destName, get) {
-  Object.defineProperty(dest, destName, {
-    enumerable: true,
-    get: get
-  });
-};
+submitBtn.addEventListener("click", function () {
+  submitBtn.classList.add("hidden"); //hide the submit button upon clicking
+  finalScore.classList.remove("hidden"); //reveal the score h1
+  finalScore.innerHTML = `Score: ${score}`; //reveal the calculated score
+});
+>>>>>>> Stashed changes
+
 },{}]},["3Imd1","5rkFb"], "5rkFb", "parcelRequiree7a4")
 
 //# sourceMappingURL=index.3fafb3e2.js.map

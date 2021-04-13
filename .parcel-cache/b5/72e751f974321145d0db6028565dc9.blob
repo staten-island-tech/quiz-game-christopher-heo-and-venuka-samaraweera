@@ -1,0 +1,19 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+// array of every single choice
+let score = 0;
+let progress = 0;
+// nested array of all the choice containers that each contain the 4 choices
+const choiceContainer = document.querySelectorAll("[id=choice-container]");
+let userAnswers = [];
+// empty list for user answer inputs
+const bool = false;
+// loop to attribute event listener (when pressed, push the displayed HTML to userAnswers array) to every choice
+for (let i = 0; i < choices.length; i++) {
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choices[i].innerHTML);
+    console.log(userAnswers);
+    bool = true;
+    console.log(bool);
+  });
+}

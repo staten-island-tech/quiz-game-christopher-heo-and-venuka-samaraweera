@@ -1,0 +1,13 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+const everything = document.getElementsByTagName("HTML");
+let score = 0;
+let progress = 0;
+const choiceContainer = document.querySelectorAll("[id=choice-container]");
+let userAnswers = [];
+for (let i = 0; i < choices.length; i++) {
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choices[i].innerHTML);
+    console.log(userAnswers);
+  });
+}

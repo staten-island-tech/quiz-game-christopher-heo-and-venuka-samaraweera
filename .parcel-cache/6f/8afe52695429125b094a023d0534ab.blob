@@ -1,0 +1,15 @@
+require("./questions");
+const choices = document.querySelectorAll("[id=choice]");
+const everything = document.getElementsByTagName("HTML");
+let score = 0;
+let progress = 0;
+const choiceContainer = document.querySelectorAll("[id=choice-container]");
+let userAnswers = [];
+// empty list for user answer inputs
+// loop to attribute event listener (when pressed, push the displayed HTML to userAnswers array) to every choice
+for (let i = 0; i < choices.length; i++) {
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choices[i].innerHTML);
+    console.log(userAnswers);
+  });
+}
