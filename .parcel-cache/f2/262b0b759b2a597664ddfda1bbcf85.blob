@@ -18,7 +18,6 @@ let userAnswers = []; //empty list for user answer inputs
 choices.forEach((choice) => {
   choice.addEventListener("click", function () {
     userAnswers.push(choice.innerHTML); //append the displayed text of the choice to the userAnswers array
-    console.log(choice);
   });
   choiceContainer.forEach((container) => {
     if (container === choice.parentElement) {

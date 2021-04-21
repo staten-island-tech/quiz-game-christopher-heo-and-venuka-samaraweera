@@ -459,16 +459,15 @@ const choiceContainer = Array.from(
 
 let userAnswers = []; //empty list for user answer inputs
 
-choices.forEach((choice) => {
-  choice.addEventListener("click", function () {
-    userAnswers.push(choice.innerHTML); //append the displayed text of the choice to the userAnswers array
-    console.log(choice);
+choices.forEach(function (i) {
+  choices[i].addEventListener("click", function () {
+    userAnswers.push(choice[i].innerHTML); //append the displayed text of the choice to the userAnswers array
   });
-  choiceContainer.forEach((container) => {
-    if (container === choice.parentElement) {
-      container.classList.add("hidden"); //whenever a choice is selected, its parent container gets deleted
-      images.forEach((image) => {
-        image.classList.add("hidden"); //whenever a choice is selected, its image gets deleted
+  choiceContainer.forEach((j) => {
+    if (choiceContainer[j] === choices[i].parentElement) {
+      choiceContainer[j].classList.add("hidden"); //whenever a choice is selected, its parent container gets deleted
+      images.forEach((k) => {
+        images[k].classList.add("hidden"); //whenever a choice is selected, its image gets deleted
       });
     }
   });
@@ -503,4 +502,4 @@ submitBtn.addEventListener("click", function () {
 
 },{}]},["3Imd1","5rkFb"], "5rkFb", "parcelRequiree7a4")
 
-//# sourceMappingURL=index.3fafb3e2.js.map
+//# sourceMappingURL=index.HASH_REF_0fa2489aa94c8731ee2aee9f3fafb3e2.js.map
